@@ -1,0 +1,30 @@
+@import "compass/css3/transform";
+
+.bric {
+    -webkit-transform: rotateY(0deg);
+    background:url('/static/image/brick1.png');
+    width:64px;
+    height:64px;
+    float:left;
+}
+.bric1 {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+.bric2 {
+    -webkit-transform-origin: 100% 100%;
+}
+.angle45 {
+    -webkit-transform: rotateY(45deg);
+}
+
+.side {
+    width: 64px;
+    height: 64px;
+  background: url("/static/image/brick1.png");
+}
+
+.side1 {
+    @include transform( rotateY(90deg));
+    transform-origin:100% 0;
+}

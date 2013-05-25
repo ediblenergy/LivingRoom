@@ -1,0 +1,41 @@
+/* line 3, ../sass/room.scss */
+.bric {
+  -webkit-transform: rotateY(0deg);
+  background: url("/static/image/brick1.png");
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+/* line 10, ../sass/room.scss */
+.bric1 {
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 14, ../sass/room.scss */
+.bric2 {
+  -webkit-transform-origin: 100% 100%;
+}
+
+/* line 17, ../sass/room.scss */
+.angle45 {
+  -webkit-transform: rotateY(45deg);
+}
+
+/* line 21, ../sass/room.scss */
+.side {
+  width: 64px;
+  height: 64px;
+  background: url("/static/image/brick1.png");
+}
+
+/* line 27, ../sass/room.scss */
+.side1 {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  transform-origin: 100% 0;
+}

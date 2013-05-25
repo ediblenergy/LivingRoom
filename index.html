@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/css/room.css"/>
+    <script src="/static/js/angular.js"></script>
+    <script src="/static/js/mr/edit_map.js"></script>
+    </head>
+    <body ng-controller="EditMap">
+    <form style="clear:both">
+        <button ng-click='flip_direction()'/>Flip Direction</button>
+    </form>
+        <div class="block">
+            <div class="side side1"/>
+            <div class="side side2"/>
+            <div class="side side3"/>
+            <div class="side side4"/>
+            <div class="side side5"/>
+            <div class="side side6"/>
+        </div>
+            <!--
+        <div
+            ng-repeat="brick in bricks"
+            class='bric'
+            ng-class-even="bric1"
+            ng-class-odd="bric2"
+            ng-click="rotateMe( $index )"
+            ng-style="rotated( $index )"
+            >-->
+    </div>
+    </body>
+
+</html>
