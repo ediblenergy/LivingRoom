@@ -1,70 +1,108 @@
-/*
-Syntax error: File to import not found or unreadable: compass/css3/transform.
-              Load paths:
-                /home/skaufman/dev/myroom/static
-                /home/skaufman/dev/myroom/static/scss
-        on line 1 of scss/room.scss
+/* line 4, ../sass/room.scss */
+.bric {
+  -webkit-transform: rotateY(0deg);
+  background: url("/static/image/brick1.png");
+  width: 64px;
+  height: 64px;
+  float: left;
+}
 
-1: @import "compass/css3/transform";
-2: 
-3: .bric {
-4:     -webkit-transform: rotateY(0deg);
-5:     background:url('/static/image/brick1.png');
-6:     width:64px;
+/* line 11, ../sass/room.scss */
+.bric1 {
+  -webkit-transform-origin: 0 0;
+}
 
-Backtrace:
-scss/room.scss:1
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/import_node.rb:67:in `import'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:217:in `visit_import'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:362:in `update_stylesheet'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:283:in `watch'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `initialize_adapter'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/linux.rb:48:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/linux.rb:48:in `initialize'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/linux.rb:48:in `new'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/linux.rb:48:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin/compiler.rb:291:in `watch'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/exec.rb:452:in `watch_or_update'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/exec.rb:315:in `process_result'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/var/lib/gems/1.8/gems/sass-3.2.9/bin/sass:9
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: compass/css3/transform.\A               Load paths:\A                 /home/skaufman/dev/myroom/static\A                 /home/skaufman/dev/myroom/static/scss\A         on line 1 of scss/room.scss\A \A 1: @import \"compass/css3/transform\";\A 2: \A 3: .bric {\A 4:     -webkit-transform: rotateY(0deg);\A 5:     background:url('/static/image/brick1.png');\A 6:     width:64px;"; }
+/* line 14, ../sass/room.scss */
+.bric2 {
+  -webkit-transform-origin: 100% 100%;
+}
+
+/* line 17, ../sass/room.scss */
+.angle45 {
+  -webkit-transform: rotateY(45deg);
+}
+
+/* line 21, ../sass/room.scss */
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 64px;
+  height: 64px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50% 50px 50%;
+  -moz-transform-origin: 50% 50% 50px 50%;
+  -ms-transform-origin: 50% 50% 50px 50%;
+  -o-transform-origin: 50% 50% 50px 50%;
+  transform-origin: 50% 50% 50px 50%;
+  perspective: 1000;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* line 35, ../sass/room.scss */
+.block div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  width: 64px;
+  height: 64px;
+  background-size: 64px 64px;
+  background: url("/static/image/brick1.png");
+}
+
+/* line 49, ../sass/room.scss */
+.side1 {
+  -webkit-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
+  -moz-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
+  -ms-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
+  -o-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
+  transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
+  -webkit-transform-origin: 0 100% 0 50%;
+  -moz-transform-origin: 0 100% 0 50%;
+  -ms-transform-origin: 0 100% 0 50%;
+  -o-transform-origin: 0 100% 0 50%;
+  transform-origin: 0 100% 0 50%;
+}
+
+/* line 54, ../sass/room.scss */
+.side2 {
+  -webkit-transform: rotateY(-90deg) rotateZ(90deg) translate3d(0, -64px, 0);
+  -webkit-transform-origin: 0 0 0;
+}
+
+/* line 59, ../sass/room.scss */
+.side3 {
+  -webkit-transform: translate3d(0, 0, 64px);
+}
+
+/* line 64, ../sass/room.scss */
+.side4 {
+  -webkit-transform: rotateX(90deg) rotateZ(180deg) translate3d(64px, -64px, 0);
+  -webkit-transform-origin: 100% 0;
+}
+
+/* line 69, ../sass/room.scss */
+.side5 {
+  -webkit-transform: rotateX(-90deg);
+  -webkit-transform-origin: 0 100%;
+}
+
+@-webkit-keyframes rotate {
+  /* line 75, ../sass/room.scss */
+  from {
+    -webkit-transform: rotateY(0) rotateX(0);
+  }
+
+  /* line 76, ../sass/room.scss */
+  to {
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+  }
+}
