@@ -1,0 +1,47 @@
+@import "compass/css3/shared";
+@mixin keyframes( $anim_name )  {
+    @keyframes $anim_name {
+        @content
+    };
+    @-moz-keyframes $anim_name {
+        @content
+    };
+    @-webkit-keyframes $anim_name {
+        @content
+    };
+}
+
+@mixin animation( $val ) {
+    @include experimental( animation, $val );
+}
+@mixin animation-direction( $val ) {
+    @include experimental( animation-direction, $val );
+}
+@mixin animation-delay ( $val ) {
+    @include experimental( animation-delay, $val );
+}
+@mixin animation-iteration-count ( $val ) {
+    @include experimental( animation-iteration-count, $val );
+}
+/*
+@-moz-keyframes rotate {
+    0% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #FFFFFF;
+    margin-top:20px;
+    }
+    75% {
+    width: $end_width+100; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+    100% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+}
+*/

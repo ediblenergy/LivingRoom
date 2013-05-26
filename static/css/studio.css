@@ -63,13 +63,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 15, ../sass/studio.scss */
+/*
+@-moz-keyframes rotate {
+    0% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #FFFFFF;
+    margin-top:20px;
+    }
+    75% {
+    width: $end_width+100; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+    100% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+}
+*/
+/* line 17, ../sass/studio.scss */
 body {
   background-color: #000000;
 }
 
-@-moz-keyframes rotate {
-  /* line 20, ../sass/studio.scss */
+@keyframes rotate {
+  /* line 23, ../sass/studio.scss */
   0% {
     width: 200px;
     height: 35px;
@@ -77,7 +99,7 @@ body {
     margin-top: 20px;
   }
 
-  /* line 26, ../sass/studio.scss */
+  /* line 29, ../sass/studio.scss */
   75% {
     width: 300px;
     height: 35px;
@@ -85,7 +107,7 @@ body {
     margin-top: 20px;
   }
 
-  /* line 32, ../sass/studio.scss */
+  /* line 35, ../sass/studio.scss */
   100% {
     width: 200px;
     height: 35px;
@@ -94,7 +116,59 @@ body {
   }
 }
 
-/* line 40, ../sass/studio.scss */
+@-moz-keyframes rotate {
+  /* line 23, ../sass/studio.scss */
+  0% {
+    width: 200px;
+    height: 35px;
+    border-color: #FFFFFF;
+    margin-top: 20px;
+  }
+
+  /* line 29, ../sass/studio.scss */
+  75% {
+    width: 300px;
+    height: 35px;
+    border-color: #9999FF;
+    margin-top: 20px;
+  }
+
+  /* line 35, ../sass/studio.scss */
+  100% {
+    width: 200px;
+    height: 35px;
+    border-color: #9999FF;
+    margin-top: 20px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  /* line 23, ../sass/studio.scss */
+  0% {
+    width: 200px;
+    height: 35px;
+    border-color: #FFFFFF;
+    margin-top: 20px;
+  }
+
+  /* line 29, ../sass/studio.scss */
+  75% {
+    width: 300px;
+    height: 35px;
+    border-color: #9999FF;
+    margin-top: 20px;
+  }
+
+  /* line 35, ../sass/studio.scss */
+  100% {
+    width: 200px;
+    height: 35px;
+    border-color: #9999FF;
+    margin-top: 20px;
+  }
+}
+
+/* line 43, ../sass/studio.scss */
 .circle {
   position: relative;
   top: 20px;
@@ -105,32 +179,64 @@ body {
   border-radius: 300px;
   border: 10px solid white;
   perspective: 1000;
+  -webkit-animation: rotate 0.5s;
   -moz-animation: rotate 0.5s;
+  -ms-animation: rotate 0.5s;
+  -o-animation: rotate 0.5s;
+  animation: rotate 0.5s;
+  -webkit-animation-direction: alternate;
   -moz-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
-/* line 54, ../sass/studio.scss */
+/* line 60, ../sass/studio.scss */
 .del1 {
+  -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
-/* line 58, ../sass/studio.scss */
+/* line 60, ../sass/studio.scss */
 .del2 {
+  -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
-/* line 62, ../sass/studio.scss */
+/* line 60, ../sass/studio.scss */
 .del3 {
+  -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
-/* line 66, ../sass/studio.scss */
+/* line 60, ../sass/studio.scss */
 .del4 {
+  -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
-/* line 70, ../sass/studio.scss */
+/* line 60, ../sass/studio.scss */
 .del5 {
+  -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
