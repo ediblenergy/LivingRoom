@@ -1,23 +1,12 @@
+@import "compass/reset";
 @import "compass/css3/transform";
 @import "compass/css3/opacity";
-$block_length: 64px;
-.bric {
-    -webkit-transform: rotateY(0deg);
-    background:url('/static/image/brick1.png');
-    width:$block_length;
-    height:$block_length;
-    float:left;
-}
-.bric1 {
-    -webkit-transform-origin: 0 0;
-}
-.bric2 {
-    -webkit-transform-origin: 100% 100%;
-}
-.angle45 {
-    -webkit-transform: rotateY(45deg);
-}
 
+$block_length: 64px;
+
+body {
+    background-color:#000000;
+}
 .block {
     position:absolute;
     top:50%; left:50%;

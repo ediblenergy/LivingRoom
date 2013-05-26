@@ -2,6 +2,7 @@
 <html ng-app>
     <head>
         <link rel="stylesheet" type="text/css" href="/static/css/room.css"/>
+    <script src="/static/js/jquery.js"></script>
     <script src="/static/js/angular.js"></script>
     <script src="/static/js/mr/edit_map.js"></script>
     </head>
@@ -9,7 +10,11 @@
     <form style="clear:both">
         <button ng-click='flip_direction()'/>Flip Direction</button>
     </form>
-        <div class="block">
+        <div 
+            class="block"
+            ng-repeat="brick in bricks"
+            ng-style="blockPos($index)"
+        >
             <div class="side side1"></div>
             <div class="side side2"></div>
             <div class="side side3"></div>

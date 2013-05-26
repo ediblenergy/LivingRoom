@@ -1,0 +1,72 @@
+@import "compass/reset";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/border-radius";
+$start_width: 5px;
+$end_width : 200px;
+$start_height: 5px;
+$end_height: 35px;
+$circle_width : 200px;
+$circle_height : 200px;
+$circle_radius : 300px;
+$circle_border_color : #FFFFFF;
+$circle_border_width : 10px;
+$animation_dur : .5s;
+body {
+    background-color:#000000;
+}
+
+@-moz-keyframes rotate {
+    0% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #FFFFFF;
+    margin-top:20px;
+    }
+    75% {
+    width: $end_width+100; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+    100% {
+    width: $end_width; 
+    height: $end_height;
+    border-color: #9999FF;
+    margin-top:20px;
+    }
+}
+
+.circle {
+    position:relative;
+    top:20px;
+    left:50%;
+    margin-left:-($circle_width+$circle_border_width)/2;
+    @include border-radius( $circle_radius );
+    border: $circle_border_width solid $circle_border_color;
+    perspective:1000;
+    -moz-animation: rotate $animation_dur;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count:infinite;
+}
+$counter: 1;
+$numdels: 5;
+.del1 {
+    -moz-animation-delay: $animation_dur/$numdels * $counter;
+}
+$counter: $counter + 1;
+.del2 {
+    -moz-animation-delay: $animation_dur/$numdels * $counter;
+}
+$counter: $counter + 1;
+.del3 {
+    -moz-animation-delay: $animation_dur/$numdels * $counter;
+}
+$counter: $counter + 1;
+.del4 {
+    -moz-animation-delay: $animation_dur/$numdels * $counter;
+}
+$counter: $counter + 1;
+.del5 {
+    -moz-animation-delay: $animation_dur/$numdels * $counter;
+}

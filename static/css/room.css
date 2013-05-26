@@ -1,28 +1,74 @@
-/* line 4, ../sass/room.scss */
-.bric {
-  -webkit-transform: rotateY(0deg);
-  background: url("/static/image/brick1.png");
-  width: 64px;
-  height: 64px;
-  float: left;
+/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-/* line 11, ../sass/room.scss */
-.bric1 {
-  -webkit-transform-origin: 0 0;
+/* line 22, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
-/* line 14, ../sass/room.scss */
-.bric2 {
-  -webkit-transform-origin: 100% 100%;
+/* line 24, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
 }
 
-/* line 17, ../sass/room.scss */
-.angle45 {
-  -webkit-transform: rotateY(45deg);
+/* line 26, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* line 21, ../sass/room.scss */
+/* line 28, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/room.scss */
+body {
+  background-color: #000000;
+}
+
+/* line 10, ../sass/room.scss */
 .block {
   position: absolute;
   top: 50%;
@@ -48,7 +94,7 @@
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 35, ../sass/room.scss */
+/* line 24, ../sass/room.scss */
 .block div {
   position: absolute;
   -webkit-backface-visibility: hidden;
@@ -58,7 +104,7 @@
   background: url("/static/image/brick1.png");
 }
 
-/* line 49, ../sass/room.scss */
+/* line 38, ../sass/room.scss */
 .side1 {
   -webkit-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
   -moz-transform: rotateY(90deg) rotateZ(-90deg) translate3d(0, 0, 64px);
@@ -72,36 +118,36 @@
   transform-origin: 0 100% 0 50%;
 }
 
-/* line 54, ../sass/room.scss */
+/* line 43, ../sass/room.scss */
 .side2 {
   -webkit-transform: rotateY(-90deg) rotateZ(90deg) translate3d(0, -64px, 0);
   -webkit-transform-origin: 0 0 0;
 }
 
-/* line 59, ../sass/room.scss */
+/* line 48, ../sass/room.scss */
 .side3 {
   -webkit-transform: translate3d(0, 0, 64px);
 }
 
-/* line 64, ../sass/room.scss */
+/* line 53, ../sass/room.scss */
 .side4 {
   -webkit-transform: rotateX(90deg) rotateZ(180deg) translate3d(64px, -64px, 0);
   -webkit-transform-origin: 100% 0;
 }
 
-/* line 69, ../sass/room.scss */
+/* line 58, ../sass/room.scss */
 .side5 {
   -webkit-transform: rotateX(-90deg);
   -webkit-transform-origin: 0 100%;
 }
 
 @-webkit-keyframes rotate {
-  /* line 75, ../sass/room.scss */
+  /* line 64, ../sass/room.scss */
   from {
     -webkit-transform: rotateY(0) rotateX(0);
   }
 
-  /* line 76, ../sass/room.scss */
+  /* line 65, ../sass/room.scss */
   to {
     -webkit-transform: rotateY(360deg) rotateX(360deg);
   }
