@@ -1,1 +1,1 @@
-angular-1.0.7.js
+angular-1.0.7.min.js

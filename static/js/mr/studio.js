@@ -6,6 +6,8 @@ function Studio($scope) {
         _circles.push({
             class: 'del' + i
         });
+    }
+    for (var i = 0; i < 20; i++) {
         _leds.push({
             class: 'led' + i
         });

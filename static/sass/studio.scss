@@ -3,6 +3,7 @@
 @import "compass/css3/opacity";
 @import "compass/css3/border-radius";
 @import "mixin/keyframes";
+$led_start:50px;
 $start_width: 5px;
 $end_width : 200px;
 $start_height: 5px;
@@ -13,6 +14,13 @@ $circle_radius : 300px;
 $circle_border_color : #FFFFFF;
 $circle_border_width : 10px;
 $animation_dur : .5s;
+$yellow_animation_dur : 1s;
+
+$led_width : 20px;
+$led_height : 10px;
+
+$yellow : yellow;
+$black : black;
 
 body {
     background-color:#000000;
@@ -40,6 +48,15 @@ body {
     }
 }
 
+@include keyframes('fade_yellow') {
+    from { 
+        background-color: $yellow;
+    }
+    to {
+        background-color: $black;
+    }
+}
+
 .circle {
     position:relative;
     top:20px;
@@ -53,12 +70,32 @@ body {
     @include animation-iteration-count ( infinite );
 }
 
+.led {
+    width: $led_width;
+    height: $led_height;
+    left: 50%;
+    margin-left: -200px;
+    position:absolute;
+    @include animation( fade_yellow $yellow_animation_dur );
+    @include animation-direction( alternate );
+    @include animation-iteration-count ( infinite );
+    margin-top: 5px;
+}
 $counter: 1;
 $numdels: 5;
 
 @for $i from 1 through $numdels {
     .del#{$i} {
-        @include animation-delay( $animation_dur/$numdels * $counter );
+        @include animation-delay( $animation_dur/$numdels * $i );
     }
-    $counter : $counter + 1;
+}
+
+$numleds : 20;
+$counter : 1;
+
+@for $i from 0 through $numleds {
+    .led#{$i} {
+        @include animation-delay( $yellow_animation_dur/$numleds * $i );
+        top: $led_start + ( $led_height * ( $i  ) * 2 );
+    }
 }
